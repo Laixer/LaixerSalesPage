@@ -1,21 +1,17 @@
 <template>
   <div id="nav">
-
-  <a href="">
-      <img src="@/assets/SVGlogo.svg" alt="">
+    <a href>
+      <img src="@/assets/SVGlogo.svg" alt />
     </a>
 
-     <button class="nav-button">
-         Get In Touch
-     </button>  
+    <button class="nav-button">Get In Touch</button>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'navbar'
-
-}
+  name: "navbar"
+};
 </script>
 
 <style lang="scss" scopped>
@@ -25,22 +21,21 @@ export default {
   justify-content: space-between;
 }
 
-  button {
+button {
+  background: #022836;
+  color: white;
+  font-family: Montserrat;
+  border: 2px solid #7ed9da;
+  font-size: 20px;
+  padding: 10px 20px;
+}
 
-    background: #022836;
-    color: white;
-    font-family: Montserrat;
-    border: 2px solid #7ED9DA;
-    font-size: 20px;
-    padding: 10px 20px;
+@media screen and (max-width: 900px) {
+  .nav-button {
+    display: none;
   }
-
-  @media screen and (max-width: 900px) {
-    .nav-button {
-      display: none;
-    }
-    a {
-      margin: auto;
-    }
+  a {
+    margin: auto;
   }
+}
 </style>
