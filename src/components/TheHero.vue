@@ -2,13 +2,14 @@
   <div class="hero">
     <div class="text">
       <h1 class="title">
-        Lorem ip sit amett sum dolor
+        The best way to predict the future is to create it.
         <span class="dot">.</span>
       </h1>
       <p>
-        Morbi posuere sagittis lorem, non
-        <span class="highlight">gravida</span> leo tempor id placerat erat,
-        <span class="highlight">quis</span> rutrum libero. Aliquam erat volutpat. ac nulla Proin feugiat risus quis tristique blandit.
+        In the upcoming decade, every company will become a <span class="highlight">software company</span>.
+        Take the <span class="highlight">lead</span>, don't follow.
+        <!-- <span class="highlight">gravida</span> leo tempor id placerat erat, -->
+        <!-- <span class="highlight">quis</span> rutrum libero. Aliquam erat volutpat. ac nulla Proin feugiat risus quis tristique blandit. -->
       </p>
       <button class="cta">Get In Touch</button>
     </div>

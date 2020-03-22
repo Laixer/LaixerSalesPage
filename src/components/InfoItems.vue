@@ -2,8 +2,8 @@
   <div class="info">
     <div class="item">
       <div class="text-box">
-        <h2>Lorem ipsum, Dolor ametT?</h2>
-        <p>Nam et arcu in metus aliquet porta. Vivamus lobortis molestie pretium. Curabitur libero diam, sodales eget neque a, imperdiet facilisis purus. Praesent euismod dictum purus, non auctor quam auctor non.</p>
+        <h2>Data Science & Machine learning</h2>
+        <p>The technology of machine learning applied in data science are reaching a nexus of capability. This field of expertise is growing up fast and is limitless. Our mindset is that you can have data without information, but you cannot have information without data. Torture the data, and it will confess to anything.</p>
       </div>
 
       <div class="img-box">
@@ -15,8 +15,8 @@
         <p>img here</p>
       </div>
       <div class="text-box">
-        <h2>Integer nec nunc nec erat?</h2>
-        <p>Vestibulum ut ultricies libero, vel sagittis elit. Ut sagittis arcu ipsum, quis suscipit ante aliquam non. Etiam tempus nisi ornare vestibulum lobortis. Proin a faucibus tellus. Suspendisse placerat id orci nec tincidunt. In egestas auctor risus, at placerat velit. Integer ullamcorper, est congue scelerisque congue, sapien lectus pulvinar velit, porta suscipit risus quam id purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi dapibus interdum justo. Nullam ut venenatis eros, in porta felis.</p>
+        <h2>COMPUTER SCIENCE & QUALITY BY DESIGN</h2>
+        <p>Digital product engineering can only be as good as its design. Subsequently a foundation can only be made with a multidisciplinary set of capabilities and knowledge. Computer Science is a science of abstraction, creating the right model for any set of problems and devising the appropriate mechanizable techniques to solve it. We combine proven principles with newly developed technology to bring customers competitive edge in their marketplaces. We can assist in problem solving and design innovative systems.</p>
       </div>
     </div>
   </div>

@@ -5,10 +5,8 @@
       <span class="dot">.</span>
     </h1>
     <p>
-      Nam et arcu in metus aliquet porta. Vivamus lobortis
-      <span class="highlight">molestie</span> pretium. Curabitur libero diam, sodales eget neque a, imperdiet facilisis purus. Praesent euismod dictum purus, non auctor quam auctor non.
-      <br />
-      <br />Aliquam et eleifend quam. Sed scelerisque elit sed sem efficitur mattis.
+      We focus on internal development of ideas and products under our own management.
+      <span class="highlight">Developments</span> and <span class="highlight">Innovations</span> are directly applied and assessed where possible. In addition to our introvert-oriented culture, we support software development projects of partners.
     </p>
 
     <button class="button">Get In Touch</button>
