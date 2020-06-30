@@ -8,7 +8,16 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: {
+      title: "Laixer",
+      metaTags: [
+        {
+          name: "description",
+          content: "The home page of Laixer B.V."
+        }
+      ]
+    }
   },
 ]
 
