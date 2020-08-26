@@ -7,10 +7,15 @@ on:
   push:
     branches: '*'
   pull_request:
-    branches: [ master ]
+    branches: '*'
 
 env:
   NODEJS_VERSION: '14.x'
+  SSH_KEY: ${{ secrets.SSH_KEY }}
+  SSH_USER: ${{ secrets.SSH_USER }}
+  SSH_HOST: ${{ secrets.SSH_HOST }}
+  SSH_PORT: 22
+  WEBROOT: /var/www/laixer-sales-page
 
 jobs:
   build:
@@ -25,3 +30,31 @@ jobs:
         node-version: ${{ env.NODEJS_VERSION }}
     - run: npm install
     - run: npm run-script build
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/production'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: NPM install & build
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODEJS_VERSION }}
+    - run: npm install
+    - run: npm run-script build
+
+    - name: Create archive
+      run: tar -czf archive.tar.gz -C dist .
+
+    - name: Copy archive via scp
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ env.SSH_HOST }}
+        username: ${{ env.SSH_USER }}
+        port: ${{ env.SSH_PORT }}
+        key: ${{ env.SSH_KEY }}
+        source: "archive.tar.gz"
+        target: "/tmp/"
