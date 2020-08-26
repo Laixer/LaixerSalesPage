@@ -3,25 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
-    "vue": "^2.6.11",
-    "vue-router": "^3.3.4",
-    "vue-template-compiler": "^2.6.10"
+    "npm-force-resolutions": "0.0.3",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.3",
+    "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.6",
-    "@vue/cli-plugin-eslint": "^4.4.6",
-    "@vue/cli-plugin-router": "^4.4.6",
-    "@vue/cli-service": "^4.4.6",
+    "@vue/cli-plugin-babel": "^4.5.4",
+    "@vue/cli-plugin-eslint": "^4.5.4",
+    "@vue/cli-plugin-router": "^4.5.4",
+    "@vue/cli-service": "^4.5.4",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.7.0",
     "eslint-plugin-vue": "^6.2.2"
   },
   "eslintConfig": {
@@ -37,6 +39,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     }
+  },
+  "resolutions": {
+    "serialize-javascript": "4.0.0"
   },
   "browserslist": [
     "> 1%",
