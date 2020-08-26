@@ -63,6 +63,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}        
         port: 22
         script: |
-            rm -r '${{ env.WEBROOT }}/*'
+            rm -rf ${{ env.WEBROOT }}/*
             tar -xzvf /tmp/archive.tar.gz -C '${{ env.WEBROOT }}'
             rm /tmp/archive.tar.gz 
