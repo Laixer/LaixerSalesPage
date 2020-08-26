@@ -1,4 +1,4 @@
-![Azure Static Web Apps CI/CD](https://github.com/Laixer/LaixerSalesPage/workflows/Azure%20Static%20Web%20Apps%20CI/CD/badge.svg)
+![Node.js CI](https://github.com/Laixer/LaixerSalesPage/workflows/Node.js%20CI/badge.svg?branch=master)
 
 # Laixer Sales Page
 
