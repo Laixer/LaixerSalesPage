@@ -21,27 +21,26 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODEJS_VERSION }}
     - run: npm install
-    - run: npm run-script build
+    - run: npm run build
 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
+    needs: [build]
 
     steps:
     - uses: actions/checkout@v2
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODEJS_VERSION }}
     - run: npm install
-    - run: npm run-script build
+    - run: npm run build
 
     - name: Create archive
       run: tar -czf archive.tar.gz -C dist .
@@ -51,7 +50,19 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}        
         port: 22
-        key: ${{ secrets.SSH_KEY }}
         source: "archive.tar.gz"
         target: "/tmp/"
+   
+    - name: Extract archive on remote server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}        
+        port: 22
+        script: |
+            rm -r '${{ env.WEBROOT }}/*'
+            tar -xzvf /tmp/archive.tar.gz -C '${{ env.WEBROOT }}'
+            rm /tmp/archive.tar.gz 
