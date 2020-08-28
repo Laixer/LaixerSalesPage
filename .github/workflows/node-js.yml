@@ -12,6 +12,7 @@ on:
 env:
   NODEJS_VERSION: '14.x'
   WEBROOT: /var/www/laixer-sales-page
+  ARCHIVE: archive.HPGLsoPJu6.tar.gz
 
 jobs:
   build:
@@ -52,8 +53,8 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}        
         port: 22
-        source: "archive.tar.gz"
-        target: "/tmp/"
+        source: ${{ env.ARCHIVE }}
+        target: '/tmp/'
    
     - name: Extract archive on remote server
       uses: appleboy/ssh-action@master
@@ -64,5 +65,5 @@ jobs:
         port: 22
         script: |
             rm -rf ${{ env.WEBROOT }}/*
-            tar -xzvf /tmp/archive.tar.gz -C '${{ env.WEBROOT }}'
-            rm /tmp/archive.tar.gz 
+            tar -xzvf /tmp/${{ env.ARCHIVE }} -C '${{ env.WEBROOT }}'
+            rm /tmp/${{ env.ARCHIVE }}
