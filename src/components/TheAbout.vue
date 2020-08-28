@@ -9,7 +9,7 @@
       <span class="highlight">Developments</span> and <span class="highlight">Innovations</span> are directly applied and assessed where possible. In addition to our introvert-oriented culture, we support software development projects of partners.
     </p>
 
-    <button class="button">Get In Touch</button>
+    <button class="button" onclick="location.href='mailto:info@laixer.com';">Get In Touch</button>
   </div>
 </template>
 
@@ -28,7 +28,6 @@ export default class TheAbout extends Vue {}</script>
 h1 {
   text-transform: uppercase;
   font-family: "amsipro-black", sans-serif;
-    src: url('~@/assets/fonts/AmsiPro-Black.otf');
   color: #fff;
   font-size: 3.6em;
   margin-bottom: 10px;
@@ -37,7 +36,6 @@ h1 {
 p {
   font-size: 1.2em;
   font-family: "amsipro-regular", sans-serif;
-  src: url('~@/assets/fonts/AmsiPro-Regular.ttf');
   text-align: left;
   color: #666f8f;
   max-width: 30%;

@@ -4,7 +4,7 @@
       <img src="@/assets/images/SVGlogo.svg" alt />
     </a>
 
-    <button class="nav-button">Get In Touch</button>
+    <button class="nav-button" onclick="location.href='mailto:info@laixer.com';">Get In Touch</button>
   </div>
 </template>
 

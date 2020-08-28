@@ -11,7 +11,7 @@
         <!-- <span class="highlight">gravida</span> leo tempor id placerat erat, -->
         <!-- <span class="highlight">quis</span> rutrum libero. Aliquam erat volutpat. ac nulla Proin feugiat risus quis tristique blandit. -->
       </p>
-      <button class="cta">Get In Touch</button>
+      <button class="cta" onclick="location.href='mailto:info@laixer.com';">Get In Touch</button>
     </div>
   </div>
 </template>
