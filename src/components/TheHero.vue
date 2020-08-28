@@ -41,7 +41,9 @@ export default class TheHero extends Vue {}
     font-size: 1.2em;
     font-family: "amsipro-regular", sans-serif;
     text-align: left;
-    color: #666f8f;
+    color: #ffffff;
+    padding: 10px;
+    background: #0000003b;
   }
 
   .highlight {

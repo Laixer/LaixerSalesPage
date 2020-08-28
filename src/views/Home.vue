@@ -5,8 +5,8 @@
         <navbar></navbar>
         <hero></hero>
         <info></info>
-        <textInfo></textInfo>
-        <icons></icons>
+        <!-- <textInfo></textInfo> -->
+        <!-- <icons></icons> -->
         <aboutMe></aboutMe>
       </div>
       <theFooter></theFooter>
@@ -16,8 +16,8 @@
         <navbar></navbar>
         <hero></hero>
         <info></info>
-        <textInfo></textInfo>
-        <icons></icons>
+        <!-- <textInfo></textInfo> -->
+        <!-- <icons></icons> -->
         <aboutMe></aboutMe>
       </div>
       <theFooter></theFooter>

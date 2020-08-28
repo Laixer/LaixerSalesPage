@@ -23,7 +23,7 @@ export default class TheAbout extends Vue {}</script>
 
 <style lang="scss" scoped>
 .about {
-  margin: 50vh 0;
+  margin: 10vh 0;
 }
 h1 {
   text-transform: uppercase;
@@ -37,7 +37,9 @@ p {
   font-size: 1.2em;
   font-family: "amsipro-regular", sans-serif;
   text-align: left;
-  color: #666f8f;
+  color: #ffffff;
+  padding: 10px;
+  background: #0000003b;
   max-width: 30%;
 }
 .highlight {

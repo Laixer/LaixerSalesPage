@@ -5,7 +5,7 @@
     </div>
 
     <div class="media">
-      <a href class="linkedin">
+      <a href="https://www.linkedin.com/company/laixerbv/" class="linkedin">
         <img src="@/assets/images/SVGLinkedin.svg" alt />
         <p>LinkedIn</p>
       </a>
@@ -29,7 +29,7 @@ export default class TheFooter extends Vue {}
 <style lang="scss" scoped>
 .footer {
   background: #022836;
-  border: 1px solid #666f8f;
+  // border: 1px solid #666f8f;
   opacity: 0.8;
   display: flex;
   padding: 25px;
@@ -40,8 +40,8 @@ export default class TheFooter extends Vue {}
   color: #a3a8bb;
   display: flex;
 }
-.logo {
-}
+// .logo {
+// }
 
 .linkedin,
 .github {
