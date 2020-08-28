@@ -12,7 +12,7 @@ on:
 env:
   NODEJS_VERSION: '14.x'
   WEBROOT: /var/www/laixer-sales-page
-  ARCHIVE: archive.HPGLsoPJu6.tar.gz
+  ARCHIVE: archive.${{ github.sha }}.tar.gz
 
 jobs:
   build:
