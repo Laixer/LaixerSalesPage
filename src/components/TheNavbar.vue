@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <a href>
-      <img src="@/assets/SVGlogo.svg" alt />
+    <a aria-label="Logo" href>
+      <img src="@/assets/images/SVGlogo.svg" alt />
     </a>
 
     <button class="nav-button">Get In Touch</button>
@@ -9,9 +9,12 @@
 </template>
 
 <script>
-export default {
-  name: "navbar"
-};
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  name: 'navbar'
+})
+export default class TheNavbar extends Vue {}
 </script>
 
 <style lang="scss" scopped>

@@ -1,26 +1,29 @@
 <template>
   <div class="footer">
     <div class="logo">
-      <img src="@/assets/SVGlogo.svg" alt />
+      <img src="@/assets/images/SVGlogo.svg" alt />
     </div>
 
     <div class="media">
       <a href class="linkedin">
-        <img src="@/assets/SVGLinkedin.svg" alt />
+        <img src="@/assets/images/SVGLinkedin.svg" alt />
         <p>LinkedIn</p>
       </a>
       <a href="https://github.com/laixer" class="github">
-        <img src="@/assets/SVGGithub.svg" alt />
+        <img src="@/assets/images/SVGGithub.svg" alt />
         <p>GitHub</p>
       </a>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "theFooter"
-};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  name: 'theFooter'
+})
+export default class TheFooter extends Vue {}
 </script>
 
 <style lang="scss" scoped>

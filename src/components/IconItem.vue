@@ -1,39 +1,42 @@
 <template>
   <div class="IconItems">
     <div class="item" v-for="dataitem in dataitems" v-bind:key="dataitem.id">
-      <img src="@/assets/SVGSpeach.svg" alt class="icon" />
-      <p>{{dataitem.text}}</p>
+      <img src="@/assets/images/SVGSpeach.svg" alt class="icon" />
+      <p>{{ dataitem.text }}</p>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "iconInfo",
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
 
-  data() {
+@Component({
+  name: 'iconInfo'
+})
+export default class IconItem extends Vue {
+  data () {
     return {
       dataitems: [
         {
-          id: "1",
-          text: "Mauris a laoreet sem. Nam turpis purus, "
+          id: '1',
+          text: 'Mauris a laoreet sem. Nam turpis purus, '
         },
         {
-          id: "2",
-          text: "Mauris a laoreet sem. Nam turpis purus, "
+          id: '2',
+          text: 'Mauris a laoreet sem. Nam turpis purus, '
         },
         {
-          id: "3",
-          text: "Mauris a laoreet sem. Nam turpis purus, "
+          id: '3',
+          text: 'Mauris a laoreet sem. Nam turpis purus, '
         },
         {
-          id: "4",
-          text: "Mauris a laoreet sem. Nam turpis purus, "
+          id: '4',
+          text: 'Mauris a laoreet sem. Nam turpis purus, '
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

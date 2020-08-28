@@ -2,19 +2,20 @@
   <div class="icons">
     <h1>Lorem ipsum dolor amet, consectetur ?</h1>
     <div class="items">
-      <iconInfo></iconInfo>
+      <iconItem></iconItem>
     </div>
   </div>
 </template>
 
-<script>
-import iconInfo from "@/components/IconItem.vue";
-export default {
-  name: "icons",
-  components: {
-    iconInfo
-  }
-};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import IconItem from '@/components/IconItem.vue'
+
+@Component({
+  name: 'icon',
+  components: { IconItem }
+})
+export default class IconInfo extends Vue {}
 </script>
 
 <style lang="scss" scoped>

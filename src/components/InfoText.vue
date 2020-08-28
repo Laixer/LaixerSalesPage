@@ -6,10 +6,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "textInfo"
-};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  name: 'textInfo'
+})
+export default class InfoText extends Vue {}
 </script>
 
 <style lang="scss" scoped>

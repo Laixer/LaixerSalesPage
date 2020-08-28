@@ -13,9 +13,13 @@
   </div>
 </template>
 
-<script>
-export default { name: "aboutMe" };
-</script>
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  name: 'aboutMe'
+})
+export default class TheAbout extends Vue {}</script>
 
 <style lang="scss" scoped>
 .about {
@@ -24,6 +28,7 @@ export default { name: "aboutMe" };
 h1 {
   text-transform: uppercase;
   font-family: "amsipro-black", sans-serif;
+    src: url('~@/assets/fonts/AmsiPro-Black.otf');
   color: #fff;
   font-size: 3.6em;
   margin-bottom: 10px;
@@ -31,7 +36,8 @@ h1 {
 }
 p {
   font-size: 1.2em;
-  font-family: "amsipro-regular-16", sans-serif;
+  font-family: "amsipro-regular", sans-serif;
+  src: url('~@/assets/fonts/AmsiPro-Regular.ttf');
   text-align: left;
   color: #666f8f;
   max-width: 30%;

@@ -3,7 +3,13 @@
     <div class="item">
       <div class="text-box">
         <h2>Data Science & Machine learning</h2>
-        <p>The technology of machine learning applied in data science are reaching a nexus of capability. This field of expertise is growing up fast and is limitless. Our mindset is that you can have data without information, but you cannot have information without data. Torture the data, and it will confess to anything.</p>
+        <p>
+          The technology of machine learning applied in data science are
+          reaching a nexus of capability. This field of expertise is growing up
+          fast and is limitless. Our mindset is that you can have data without
+          information, but you cannot have information without data. Torture the
+          data, and it will confess to anything.
+        </p>
       </div>
 
       <div class="img-box">
@@ -16,16 +22,28 @@
       </div>
       <div class="text-box">
         <h2>COMPUTER SCIENCE & QUALITY BY DESIGN</h2>
-        <p>Digital product engineering can only be as good as its design. Subsequently a foundation can only be made with a multidisciplinary set of capabilities and knowledge. Computer Science is a science of abstraction, creating the right model for any set of problems and devising the appropriate mechanizable techniques to solve it. We combine proven principles with newly developed technology to bring customers competitive edge in their marketplaces. We can assist in problem solving and design innovative systems.</p>
+        <p>
+          Digital product engineering can only be as good as its design.
+          Subsequently a foundation can only be made with a multidisciplinary
+          set of capabilities and knowledge. Computer Science is a science of
+          abstraction, creating the right model for any set of problems and
+          devising the appropriate mechanizable techniques to solve it. We
+          combine proven principles with newly developed technology to bring
+          customers competitive edge in their marketplaces. We can assist in
+          problem solving and design innovative systems.
+        </p>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "info"
-};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  name: 'info'
+})
+export default class InfoItems extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -52,7 +70,7 @@ export default {
     }
     p {
       font-size: 1.5vw;
-      font-family: "amsipro-regular-16", sans-serif;
+      font-family: "amsipro-regular", sans-serif;
       text-align: left;
       color: #666f8f;
     }

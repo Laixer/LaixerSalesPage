@@ -17,9 +17,12 @@
 </template>
 
 <script>
-export default {
-  name: "hero"
-};
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  name: 'hero'
+})
+export default class TheHero extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -36,7 +39,7 @@ export default {
   }
   p {
     font-size: 1.2em;
-    font-family: "amsipro-regular-16", sans-serif;
+    font-family: "amsipro-regular", sans-serif;
     text-align: left;
     color: #666f8f;
   }
