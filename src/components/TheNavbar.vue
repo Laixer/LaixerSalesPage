@@ -31,6 +31,7 @@ button {
   border: 2px solid #7ed9da;
   font-size: 20px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
