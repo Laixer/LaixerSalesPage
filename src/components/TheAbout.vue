@@ -6,7 +6,12 @@
     </h1>
     <p>
       We focus on internal development of ideas and products under our own management.
-      <span class="highlight">Developments</span> and <span class="highlight">Innovations</span> are directly applied and assessed where possible. In addition to our introvert-oriented culture, we support software development projects of partners.
+      <span
+        class="highlight"
+      >Developments</span> and
+      <span class="highlight">Innovations</span>
+      are directly applied and assessed where possible.
+      In addition to our introvert-oriented culture, we support software development projects of partners.
     </p>
 
     <button class="button" onclick="location.href='mailto:info@laixer.com';">Get In Touch</button>
@@ -14,12 +19,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'aboutMe'
+  name: 'aboutMe',
 })
-export default class TheAbout extends Vue {}</script>
+export default class TheAbout extends Vue { }</script>
 
 <style lang="scss" scoped>
 .about {

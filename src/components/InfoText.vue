@@ -1,18 +1,22 @@
 <template>
   <div class="infoText">
     <div class="text">
-      <p>Maecenas efficitur, ex vel maximus sollicitudin, tortor urna aliquam erat, in dictum nisl arcu iaculis ligula. Pellentesque ex eros, imperdiet in venenatis sit amet, gravida ullamcorper mauris.</p>
+      <p>
+        Maecenas efficitur, ex vel maximus sollicitudin,
+        tortor urna aliquam erat, in dictum nisl arcu iaculis ligula. Pellentesque ex eros,
+        imperdiet in venenatis sit amet, gravida ullamcorper mauris.
+      </p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'textInfo'
+  name: 'textInfo',
 })
-export default class InfoText extends Vue {}
+export default class InfoText extends Vue { }
 </script>
 
 <style lang="scss" scoped>

@@ -18,12 +18,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'theFooter'
+  name: 'theFooter',
 })
-export default class TheFooter extends Vue {}
+export default class TheFooter extends Vue { }
 </script>
 
 <style lang="scss" scoped>

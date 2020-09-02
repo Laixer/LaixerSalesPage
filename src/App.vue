@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "amsipro-black", sans-serif;
-  src: url('~@/assets/fonts/AmsiPro-Black.otf');
+  src: url("~@/assets/fonts/AmsiPro-Black.otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

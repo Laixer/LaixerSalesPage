@@ -8,14 +8,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import IconItem from '@/components/IconItem.vue'
+import { Component, Vue } from 'vue-property-decorator';
+import IconItem from '@/components/IconItem.vue';
 
 @Component({
   name: 'icon',
-  components: { IconItem }
+  components: { IconItem },
 })
-export default class IconInfo extends Vue {}
+export default class IconInfo extends Vue { }
 </script>
 
 <style lang="scss" scoped>

@@ -6,10 +6,13 @@
         <span class="dot">.</span>
       </h1>
       <p>
-        In the upcoming decade, every company will become a <span class="highlight">software company</span>.
-        Take the <span class="highlight">lead</span>, don't follow.
+        In the upcoming decade, every company will become a
+        <span class="highlight">software company</span>.
+        Take the
+        <span class="highlight">lead</span>, don't follow.
         <!-- <span class="highlight">gravida</span> leo tempor id placerat erat, -->
-        <!-- <span class="highlight">quis</span> rutrum libero. Aliquam erat volutpat. ac nulla Proin feugiat risus quis tristique blandit. -->
+        <!-- <span class="highlight">quis</span> rutrum libero. Aliquam erat volutpat.
+        ac nulla Proin feugiat risus quis tristique blandit.-->
       </p>
       <button class="cta" onclick="location.href='mailto:info@laixer.com';">Get In Touch</button>
     </div>
@@ -17,12 +20,12 @@
 </template>
 
 <script>
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'hero'
+  name: 'hero',
 })
-export default class TheHero extends Vue {}
+export default class TheHero extends Vue { }
 </script>
 
 <style lang="scss" scoped>

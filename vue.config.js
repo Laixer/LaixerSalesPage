@@ -4,6 +4,6 @@ module.exports = {
     host: '0.0.0.0',
     port: 8081, // CHANGE YOUR PORT HERE!
     https: true,
-    http2: true
-  }
-}
+    http2: true,
+  },
+};

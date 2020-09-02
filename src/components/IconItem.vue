@@ -8,34 +8,30 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'iconInfo'
+  name: 'iconInfo',
 })
 export default class IconItem extends Vue {
-  data () {
-    return {
-      dataitems: [
-        {
-          id: '1',
-          text: 'Mauris a laoreet sem. Nam turpis purus, '
-        },
-        {
-          id: '2',
-          text: 'Mauris a laoreet sem. Nam turpis purus, '
-        },
-        {
-          id: '3',
-          text: 'Mauris a laoreet sem. Nam turpis purus, '
-        },
-        {
-          id: '4',
-          text: 'Mauris a laoreet sem. Nam turpis purus, '
-        }
-      ]
-    }
-  }
+  private dataitems: Array<{ id: string, text: string }> = [
+    {
+      id: '1',
+      text: 'Mauris a laoreet sem. Nam turpis purus, ',
+    },
+    {
+      id: '2',
+      text: 'Mauris a laoreet sem. Nam turpis purus, ',
+    },
+    {
+      id: '3',
+      text: 'Mauris a laoreet sem. Nam turpis purus, ',
+    },
+    {
+      id: '4',
+      text: 'Mauris a laoreet sem. Nam turpis purus, ',
+    },
+  ]
 }
 </script>
 

@@ -26,15 +26,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
-import navbar from '@/components/TheNavbar.vue'
-import hero from '@/components/TheHero.vue'
-import info from '@/components/InfoItems.vue'
-import textInfo from '@/components/InfoText.vue'
-import icons from '@/components/IconInfo.vue'
-import aboutMe from '@/components/TheAbout.vue'
-import theFooter from '@/components/TheFooter.vue'
+import navbar from '@/components/TheNavbar.vue';
+import hero from '@/components/TheHero.vue';
+import info from '@/components/InfoItems.vue';
+import textInfo from '@/components/InfoText.vue';
+import icons from '@/components/IconInfo.vue';
+import aboutMe from '@/components/TheAbout.vue';
+import theFooter from '@/components/TheFooter.vue';
 
 @Component({
   name: 'home',
@@ -45,10 +45,10 @@ import theFooter from '@/components/TheFooter.vue'
     textInfo,
     icons,
     aboutMe,
-    theFooter
-  }
+    theFooter,
+  },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue { }
 </script>
 
 <style lang="scss" scoped>
