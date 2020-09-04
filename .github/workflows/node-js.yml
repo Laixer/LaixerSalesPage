@@ -11,8 +11,6 @@ on:
 
 env:
   NODEJS_VERSION: '14.x'
-  WEBROOT: /var/www/laixer-sales-page
-  ARCHIVE: archive.${{ github.sha }}.tar.gz
 
 jobs:
   build:
@@ -30,6 +28,11 @@ jobs:
 
   deploy:
     name: Deploy
+    env:
+      DEPLOY_NAME: laixer-sales-page-dist
+      DEPLOY_DIRECTORY: laixer-sales-page
+      ARCHIVE: laixer-sales-page-dist.${{ github.sha }}.tar.gz
+
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     needs: [build]
@@ -51,19 +54,19 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
-        key: ${{ secrets.SSH_KEY }}        
+        key: ${{ secrets.SSH_KEY }}
         port: 22
         source: ${{ env.ARCHIVE }}
-        target: '/tmp/'
+        target: '/var/cache/deployment/tmp'
    
     - name: Extract archive on remote server
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
-        key: ${{ secrets.SSH_KEY }}        
+        key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
-            rm -rf ${{ env.WEBROOT }}/*
-            tar -xzvf /tmp/${{ env.ARCHIVE }} -C ${{ env.WEBROOT }}
-            rm /tmp/${{ env.ARCHIVE }}
+          rm -rf /var/cache/deployment/current/${{ env.DEPLOY_NAME }}.*.tar.gz
+          mv /var/cache/deployment/tmp/${{ env.ARCHIVE }} /var/cache/deployment/current/
+          /var/cache/deployment/deploy.sh ${{ env.DEPLOY_DIRECTORY }} ${{ env.DEPLOY_NAME }}
